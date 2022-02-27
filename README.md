@@ -1,120 +1,119 @@
-# A collection of `.gitignore` templates
+# Una coleccion de `.gitignore` plantillas
 
-This is GitHub’s collection of [`.gitignore`][man] file templates.
-We use this list to populate the `.gitignore` template choosers available
-in the GitHub.com interface when creating new repositories and files.
+Esta es la colección de GitHub de [`.gitignore`][man] plantillas de archivos.
+Usamos esta lista para llenar el `.gitignore` selectores de plantilla disponiblesen la interfaz de GitHub.com al crear nuevos repositorios y archivos.
 
-For more information about how `.gitignore` files work, and how to use them,
-the following resources are a great place to start:
+Para obtener más información sobre cómo `.gitignore` funcionan los archivos y cómo usarlos,
+los siguientes recursos son un excelente lugar para comenzar:
 
-- The [Ignoring Files chapter][chapter] of the [Pro Git][progit] book.
-- The [Ignoring Files article][help] on the GitHub Help site.
-- The [gitignore(5)][man] manual page.
+- El [capítulo Ignorar archivos][chapter] del [Libro Pro Git][progit]
+- El [Ignorar el artículo de archivos][help] en el sitio de ayuda de GitHub.
+- El [gitignore(5)][man] manual pagina.
 
 [man]: http://git-scm.com/docs/gitignore
 [help]: https://help.github.com/articles/ignoring-files
 [chapter]: https://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository#_ignoring
 [progit]: http://git-scm.com/book
 
-## Folder structure
+## Estructura de carpetas
 
-We support a collection of templates, organized in this way:
+Admitimos una colección de plantillas, organizadas de esta manera:
 
-- The root folder contains templates in common use, to help people get started
-  with popular programming languages and technologies. These define a meaningful
-  set of rules to help get started, and ensure you are not committing
-  unimportant files into your repository.
-- [`Global`](./Global) contains templates for various editors, tools and
-  operating systems that can be used in different situations. It is recommended
-  that you either [add these to your global template](https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files#configuring-ignored-files-for-all-repositories-on-your-computer)
-  or merge these rules into your project-specific templates if you want to use
-  them permanently.
-- [`community`](./community) contains specialized templates for other popular
-  languages, tools and project, which don't currently belong in the mainstream
-  templates. These should be added to your project-specific templates when you
-  decide to adopt the framework or tool.
+- La carpeta raíz contiene plantillas de uso común, para ayudar a las personas a comenzar
+  con lenguajes de programación y tecnologías populares. Estos definen un sentido
+  conjunto de reglas para ayudarlo a comenzar y asegurarse de que no se está comprometiendo
+  archivos sin importancia en su repositorio.
+- [`Global`](./Global) contiene plantillas para varios editores, herramientas y
+  sistemas operativos que se pueden utilizar en diferentes situaciones. Es recomendado
+  que usted [agregue estos a su plantilla global](https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files#configuring-ignored-files-for-all-repositories-on-your-computer)
+  o combine estas reglas en las plantillas específicas de su proyecto si desea usar
+  ellos permanentemente.
+- [`community`](./community) contiene plantillas especializadas para otros populares
+  lenguajes, herramientas y proyectos, que actualmente no pertenecen a la corriente principal
+  plantillas. Estos deben agregarse a las plantillas específicas de su proyecto cuando
+  decidir adoptar el marco o la herramienta.
 
-## What makes a good template?
+## ¿Qué hace una buena plantilla?
 
-A template should contain a set of rules to help Git repositories work with a
-specific programming language, framework, tool or environment.
+Una plantilla debe contener un conjunto de reglas para ayudar a los repositorios de Git a trabajar con un
+lenguaje de programación, framework, herramienta o entorno específico.
 
-If it's not possible to curate a small set of useful rules for this situation,
-then the template is not a good fit for this collection.
+Si no es posible seleccionar un pequeño conjunto de reglas útiles para esta situación,
+entonces la plantilla no es adecuada para esta colección.
 
-If a template is mostly a list of files installed by a particular version of
-some software (e.g. a PHP framework), it could live under the `community`
-directory. See [versioned templates](#versioned-templates) for more details.
+Si una plantilla es principalmente una lista de archivos instalados por una versión particular de
+algún software (por ejemplo, un marco PHP), podría vivir bajo el `community`
+directorio. Ver [plantillas versionadas](#versioned-templates) para más detalles.
 
-If you have a small set of rules, or want to support a technology that is not
-widely in use, and still believe this will be helpful to others, please read the
-section about [specialized templates](#specialized-templates) for more details.
+Si tiene un pequeño conjunto de reglas o desea admitir una tecnología que no es
+ampliamente en uso, y todavía cree que esto será útil para otros, lea el
+sección sobre [plantillas especializadas](#specialized-templates) para más detalles.
 
-Include details when opening pull request if the template is important and visible. We
-may not accept it immediately, but we can promote it to the root at a later date
-based on interest.
+Incluya detalles al abrir la solicitud de extracción si la plantilla es importante y visible. Nosotros
+es posible que no lo acepte de inmediato, pero podemos promoverlo a la raíz en una fecha posterior
+basado en el interés.
 
-Please also understand that we can’t list every tool that ever existed.
-Our aim is to curate a collection of the _most common and helpful_ templates,
-not to make sure we cover every project possible. If we choose not to
-include your language, tool, or project, it’s not because it’s not awesome.
+Comprenda también que no podemos enumerar todas las herramientas que alguna vez existieron.
+Nuestro objetivo es seleccionar una colección de las plantillas _más comunes y útiles_,
+no para asegurarnos de cubrir todos los proyectos posibles. Si elegimos no hacerlo
+incluya su idioma, herramienta o proyecto, no es porque no sea increíble.
 
-## Contributing guidelines
+## Pauta de contribución
 
-We’d love for you to help us improve this project. To help us keep this collection
-high quality, we request that contributions adhere to the following guidelines.
+Nos encantaría que nos ayudaras a mejorar este proyecto. Para ayudarnos a mantener esta colección
+alta calidad, solicitamos que las contribuciones se adhieran a las siguientes pautas.
 
-- **Provide a link to the application or project’s homepage**. Unless it’s
-  extremely popular, there’s a chance the maintainers don’t know about or use
-  the language, framework, editor, app, or project your change applies to.
+- **Proporcione un enlace a la página de inicio de la aplicación o del proyecto**. a menos que sea
+  extremadamente popular, existe la posibilidad de que los mantenedores no conozcan o no utilicen
+  el idioma, el marco, el editor, la aplicación o el proyecto al que se aplica el cambio.
 
-- **Provide links to documentation** supporting the change you’re making.
-  Current, canonical documentation mentioning the files being ignored is best.
-  If documentation isn’t available to support your change, do the best you can
-  to explain what the files being ignored are for.
+- **Proporcione enlaces a la documentación** que respalde el cambio que está realizando.
+  Lo mejor es la documentación actual y canónica que menciona los archivos que se ignoran.
+  Si la documentación no está disponible para respaldar su cambio, haga lo mejor que pueda
+  para explicar para qué sirven los archivos que se ignoran.
 
-- **Explain why you’re making a change**. Even if it seems self-evident, please
-  take a sentence or two to tell us why your change or addition should happen.
-  It’s especially helpful to articulate why this change applies to _everyone_
-  who works with the applicable technology, rather than just you or your team.
+- **Explique por qué está haciendo un cambio**. Incluso si parece evidente, por favor
+  tome una oración o dos para decirnos por qué debería ocurrir su cambio o adición.
+  Es especialmente útil articular por qué este cambio se aplica a _todos_
+  que trabaja con la tecnología aplicable, en lugar de solo usted o su equipo.
 
-- **Please consider the scope of your change**. If your change is specific to a
-  certain language or framework, then make sure the change is made to the
-  template for that language or framework, rather than to the template for an
-  editor, tool, or operating system.
+- **Por favor considere el alcance de su cambio**. Si su cambio es específico a un
+  cierto lenguaje o marco, luego asegúrese de que el cambio se realice en el
+  plantilla para ese lenguaje o marco, en lugar de la plantilla para un
+  editor, herramienta o sistema operativo.
 
-- **Please only modify _one template_ per pull request**. This helps keep pull
-  requests and feedback focused on a specific project or technology.
+- **Por favor, solo modifique _una plantilla_ por solicitud de extracción**. Esto ayuda a mantener el tirón
+  solicitudes y comentarios centrados en un proyecto o tecnología específica.
 
-In general, the more you can do to help us understand the change you’re making,
-the more likely we’ll be to accept your contribution quickly.
+En general, cuanto más pueda hacer para ayudarnos a comprender el cambio que está realizando,
+más probable será que aceptemos su contribución rápidamente.
 
-## Versioned templates
+## Plantillas versionadas
 
-Some templates can change greatly between versions, and if you wish to contribute
-to this repository we need to follow this specific flow:
+Algunas plantillas pueden cambiar mucho entre versiones, y si desea contribuir
+a este repositorio necesitamos seguir este flujo específico:
 
-- the template at the root should be the current supported version
-- the template at the root should not have a version in the filename (i.e.
-  "evergreen")
-- previous versions of templates should live under `community/`
-- previous versions of the template should embed the version in the filename,
-  for readability
+- la plantilla en la raíz debe ser la versión compatible actual
+- la plantilla en la raíz no debe tener una versión en el nombre del archivo (es decir,
+  "hojas perennes")
+- Las versiones anteriores de las plantillas deben vivir en `comunidad/`
+- las versiones anteriores de la plantilla deben incrustar la versión en el nombre del archivo,
+  para la legibilidad
 
-This helps ensure users get the latest version (because they'll use whatever is
-at the root) but helps maintainers support older versions still in the wild.
+Esto ayuda a garantizar que los usuarios obtengan la última versión (porque usarán lo que sea
+en la raíz) pero ayuda a los mantenedores a admitir versiones anteriores que aún están en circulación.
 
-## Specialized templates
+## Plantillas especializadas
 
-If you have a template that you would like to contribute, but it isn't quite
-mainstream, please consider adding this to the `community` directory under a
-folder that best suits where it belongs.
+Si tiene una plantilla que le gustaría contribuir, pero no es del todo
+mainstream, considere agregar esto al directorio `community` bajo un
+carpeta que mejor se adapte a su lugar.
 
-The rules in your specialized template should be specific to the framework or
-tool, and any additional templates should be mentioned in a comment in the
-header of the template.
+Las reglas en su plantilla especializada deben ser específicas para el marco o
+herramienta, y cualquier plantilla adicional debe mencionarse en un comentario en el
+encabezado de la plantilla.
 
-For example, this template might live at `community/DotNet/InforCRM.gitignore`:
+Por ejemplo, esta plantilla podría vivir en `community/DotNet/InforCRM.gitignore`:
 
 ```
 # gitignore template for InforCRM (formerly SalesLogix)
@@ -134,17 +133,17 @@ ExportedFiles.xml
 !Model/Portal/PortalTemplates/*/SupportFiles/[Bb]in
 ```
 
-## Contributing workflow
+## Flujo de trabajo de contribución
 
-Here’s how we suggest you go about proposing a change to this project:
+Así es como te sugerimos que propongas un cambio en este proyecto:
 
-1. [Fork this project][fork] to your account.
-2. [Create a branch][branch] for the change you intend to make.
-3. Make your changes to your fork.
-4. [Send a pull request][pr] from your fork’s branch to our `main` branch.
+1. [Bifurcar este proyecto][fork] a tu cuenta.
+2. [crear una rama][branch] por el cambio que pretendes hacer.
+3. Haz tus cambios en tu tenedor.
+4. [Enviar una solicitud de extracción][pr] De la rama de tu tenedor a nuestro `main` rama.
 
-Using the web-based interface to make changes is fine too, and will help you
-by automatically forking the project and prompting to send a pull request too.
+Usar la interfaz basada en la web para hacer cambios también está bien y lo ayudará
+bifurcando automáticamente el proyecto y solicitando que se envíe también una solicitud de extracción.
 
 [fork]: https://help.github.com/articles/fork-a-repo/
 [branch]: https://help.github.com/articles/creating-and-deleting-branches-within-your-repository
@@ -153,3 +152,4 @@ by automatically forking the project and prompting to send a pull request too.
 ## License
 
 [CC0-1.0](./LICENSE).
+
